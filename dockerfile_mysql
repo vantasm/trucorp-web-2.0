@@ -1,0 +1,7 @@
+FROM mysql:latest
+
+COPY trucorp-db.sql /docker-entrypoint-initdb.d/
+
+ENV MYSQL_DATABASE=trucorp
+
+ENV MYSQL_ROOT_PASSWORD=hayoapa
